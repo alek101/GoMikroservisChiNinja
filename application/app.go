@@ -32,6 +32,7 @@ func New() (*App, error) {
 }
 
 func (a *App) Start(ctx context.Context) error {
+	// defer se obavlja kada se posalje signal da se app gasi
 	// defer a.db.Close()
 
 	server := http.Server{
